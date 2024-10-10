@@ -15,6 +15,7 @@ body {
 h1 {
     @apply font-bold text-2xl;
 }
+
 h2 {
     @apply font-bold text-xl;
 }
@@ -24,15 +25,25 @@ h2 {
 }
 
 .header {
-    @apply bg-blue-100 w-screen h-20 p-4 border-b-2 border-blue-900
+    @apply bg-blue-100 w-screen h-32 border-b-2 border-blue-900
+}
+
+.header-title {
+    @apply h-4/5 pt-4 px-6
+}
+
+nav {
+    @apply h-1/5 px-20 pb-4
 }
 
 .main {
     @apply bg-blue-200 h-4/5
 }
+
 .upperSection {
     @apply h-2/6
 }
+
 .content {
     @apply bg-blue-300 h-3/6
 }

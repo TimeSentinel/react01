@@ -1,8 +1,17 @@
+import Carousel from "./carousel.tsx";
+
 function MainContent() {
     return (
-        <div>
-            <p>content</p>
-        </div>
+        <>
+            <div className="main-head">
+                <Carousel/>
+            </div>
+            <div className="main-body">
+
+            </div>
+
+
+        </>
     )
 }
 

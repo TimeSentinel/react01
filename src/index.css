@@ -7,56 +7,107 @@ a {
 
 }
 
-
 body {
-    @apply flex h-full w-screen
+    @apply w-screen bg-black;
+    font-size: 16px;
 }
 
 h1 {
-    @apply font-bold text-2xl;
+    @apply font-bold text-4xl;
 }
 
 h2 {
     @apply font-bold text-xl;
 }
 
+h3 {
+    @apply font-bold text-2xl;
+}
+
 #root {
     @apply h-screen
 }
 
-.header {
-    @apply bg-blue-100 w-screen h-32 border-b-2 border-blue-900
+.header4 {
+    @apply bg-blue-100 w-screen h-48 border-b-2 border-blue-900
 }
 
 .header-title {
-    @apply h-4/5 pt-4 px-6
+    @apply h-3/5 pt-4 px-6;
 }
 
 nav {
-    @apply h-1/5 px-20 pb-4
+    @apply h-2/5 px-20 pb-4;
+}
+
+.menuBar {
+    @apply font-medium flex flex-col p-4 rounded-lg md:flex-row space-x-8 rtl:space-x-reverse md:mt-0 ;
+}
+
+.menuItem {
+    @apply block font-bold py-2 px-3 mx-6 mb-2 text-gray-600 hover:bg-blue-900 hover:text-yellow-300 hover:no-underline;
+}
+
+.menuSelected {
+    @apply block font-black py-2 px-3 mx-6 mb-2 text-blue-100 bg-blue-400 no-underline hover:no-underline;
 }
 
 .main {
-    @apply bg-blue-200 h-4/5
-}
-
-.upperSection {
-    @apply h-2/6
+    @apply bg-black h-4/5;
 }
 
 .content {
-    @apply bg-blue-300 h-3/6
+    @apply h-3/5 bg-black;
+}
+
+.main-head {
+    @apply bg-blue-700
+}
+
+.main-body {
+    @apply bg-black;
 }
 
 .footer {
-    @apply bg-blue-950 h-20 pt-4 text-xs text-blue-200 text-center
+    @apply bg-black h-20 pt-4 text-xs text-blue-200 text-center
+}
+
+/* ********************************************************************** */
+/* **********************  CAROUSEL ************************************* */
+.carousel-main {
+    @apply justify-center content-center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+
+}
+
+carousel-selectors {
+    @apply right-0
+}
+
+.carousel-img {
+    @apply block h-full m-auto shadow-md;
+}
+
+.carousel-inner > .item {
+    @apply m-auto
+}
+
+.carousel-img > img {
+    height: 400px;
+    @apply m-auto w-1/2
+}
+
+.carousel-container {
+    @apply m-auto max-h-screen;
+}
+
+.carousel-summary {
+    @apply w-1/2 clear-both text-blue-50 m-auto text-xl px-10 py-4;
 }
 
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
 
-}
+

@@ -71,5 +71,4 @@ function PortfolioCarousel() {
     )
 }
 
-
-export default portfolioCarousel;
+export default PortfolioCarousel;

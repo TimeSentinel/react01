@@ -115,9 +115,25 @@ nav {
 .carousel-container {
     @apply mx-auto max-h-screen bg-blue-800 border-2 border-blue-900 mb-5 shadow-md;
 }
+.a-carousel-container {
+    @apply mx-auto py-8 max-h-screen bg-gray-700 border-2 border-black mb-5 ;
+}
 
 .carousel-summary, .a-carousel-summary {
     @apply clear-both text-blue-50  ;
+}
+
+.frame1 {
+    width: 300px;
+    @apply bg-black
+}
+.frame2 {
+    width: 300px;
+    @apply bg-gray-600 p-5
+}
+.frame3 {
+    width: 300px;
+    @apply bg-red-500 h-5/6
 }
 
 

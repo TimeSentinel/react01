@@ -19,7 +19,7 @@ function Header() {
                                   d="M1 1h15M1 7h15M1 13h15"/>
                         </svg>
                     </button>
-                    <div className="w-full md:block md:w-auto" id="navbar-default">
+                    <div className="navMenu" id="navbar-default">
                         <ul className="menuBar">
                             <li>
                                 <a href="#" className="menuSelected" aria-current="page">Home</a>

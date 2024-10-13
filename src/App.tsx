@@ -1,7 +1,7 @@
 import './App.css'
 import Header from "./header.tsx";
 import Footer from "./footer.tsx";
-import MainContent from "./content.tsx";
+import MainContent from "./portfolioContent.tsx";
 
 function App() {
 

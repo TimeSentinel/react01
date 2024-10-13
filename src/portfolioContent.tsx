@@ -1,13 +1,14 @@
-import Carousel from "./carousel.tsx";
+import PortfolioCarousel from "./portfolio-carousel.tsx";
+import ArchiveCarousel from "./archive-carousel.tsx";
 
 function MainContent() {
     return (
         <>
             <div className="main-head">
-                <Carousel/>
+                <PortfolioCarousel/>
             </div>
             <div className="main-body">
-
+                <ArchiveCarousel/>
             </div>
 
 

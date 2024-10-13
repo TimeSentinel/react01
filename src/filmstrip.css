@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filmstrip {
+    background: #1d0d03;
+    @apply  w-full relative my-auto shadow-lg shadow-gray-600;
+}
+
+.tractionTop, .tractionBottom {
+    @apply w-full flex justify-around ;
+}
+
+.tractionBottom {
+    @apply absolute bottom-0;
+}
+
+.traction {
+    @apply bg-gray-700 border-l-2 border-t-2 border-gray-500 my-3;
+}
+
+.filmGallery {
+    @apply my-auto w-full flex ;
+}
+
+.frame-1, .frame-2, .frame-3 {
+    @apply bg-gray-500 overflow-hidden border-2 border-gray-500 rounded-2xl;
+}
+
+
+
+
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 767px) {
+    .filmstrip {
+        height: 260px;
+    }
+
+    .traction {
+        height: 18px;
+        width: 18px;
+        @apply mx-2
+    }
+
+    .filmGallery {
+        height: 194px;
+    }
+
+    .frame-1, .frame-3 {
+        @apply h-full w-1/5;
+    }
+
+    .frame-2 {
+        @apply h-full w-1/2;
+    }
+
+    .filmGallery, .tractionTop, .tractionBottom {
+        @apply justify-between ;
+    }
+    .frameImg {
+        @apply h-full grayscale-0
+    }
+}
+
+/* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+    .filmstrip {
+        height: 300px;
+    }
+
+    .traction {
+        height: 23px;
+        width: 23px;
+        @apply mx-5
+    }
+
+    .filmGallery {
+        height: 226px;
+    }
+
+    .frame-1, .frame-3 {
+        @apply h-full w-1/4;
+    }
+
+    .frame-2 {
+        @apply h-full w-1/3;
+    }
+
+    .filmGallery, .tractionTop, .tractionBottom {
+        @apply justify-between ;
+    }
+    .frameImg {
+        @apply h-full grayscale-0
+    }
+}
+
+/* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 992px) {
+    .filmstrip {
+        height: 400px;
+    }
+
+    .traction {
+        height: 27px;
+        width: 27px;
+        @apply mx-8
+    }
+
+    .filmGallery {
+        height: 316px;
+    }
+
+    .frame-1, .frame-2, .frame-3 {
+        @apply h-full w-1/4;
+    }
+
+    .filmGallery, .tractionTop, .tractionBottom {
+        @apply justify-around ;
+    }
+    .frameImg {
+        @apply h-full grayscale
+    }
+    .frameImg:hover {
+        @apply h-full grayscale-0;
+    }
+    .frame-2>img {
+        @apply grayscale-0;
+    }
+}
+
+/* ------------ End Desktop ------------ */
+
+/* ##########------------ End Media ------------########## */
+
+

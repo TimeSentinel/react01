@@ -4,7 +4,7 @@
 
 .filmstrip {
     background: #1d0d03;
-    @apply  w-full relative my-auto shadow-lg shadow-gray-600;
+    @apply w-full relative my-auto shadow-lg shadow-gray-600;
 }
 
 .tractionTop, .tractionBottom {
@@ -21,14 +21,23 @@
 
 .filmGallery {
     @apply my-auto w-full flex ;
+    -webkit-animation: left-to-right 4s linear forwards;
+    animation: left-to-right 4s linear forwards;
 }
 
 .frame-1, .frame-2, .frame-3 {
     @apply bg-gray-500 overflow-hidden border-2 border-gray-500 rounded-2xl;
+
+}
+@-webkit-keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
 }
 
-
-
+@keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
+}
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
@@ -58,6 +67,7 @@
     .filmGallery, .tractionTop, .tractionBottom {
         @apply justify-between ;
     }
+
     .frameImg {
         @apply h-full grayscale-0
     }
@@ -92,6 +102,8 @@
     .filmGallery, .tractionTop, .tractionBottom {
         @apply justify-between ;
     }
+
+    /*ToDo lock image aspect ratio*/
     .frameImg {
         @apply h-full grayscale-0
     }
@@ -122,13 +134,16 @@
     .filmGallery, .tractionTop, .tractionBottom {
         @apply justify-around ;
     }
+
     .frameImg {
         @apply h-full grayscale
     }
+
     .frameImg:hover {
         @apply h-full grayscale-0;
     }
-    .frame-2>img {
+
+    .frame-2 > img {
         @apply grayscale-0;
     }
 }

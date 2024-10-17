@@ -23,8 +23,9 @@ function PortfolioCarousel() {
                                 <h3>Drone Website</h3>
                                 <p>Customized WordPress site.</p>
                             </div>
-                            <div className="w-full h-screen content-center"><br/>taco<br/>taco<br/><br/>taco<br/><br/>taco<br/><br/>
-                                taco<br/><br/>taco<br/><br/>taco<br/><br/>taco<br/><br/>taco<br/><br/></div>
+                            <div className="w-full h-screen content-center">
+
+                            </div>
                         </div>
 
                         <div className="item ">

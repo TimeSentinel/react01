@@ -1,6 +1,7 @@
 import './filmstrip.css'
 
-function Filmstrip(img1: string, imgAlt1: string, img2: string, imgAlt2: string, img3: string, imgAlt3: string) {
+
+function Filmstrip(pic1:string,alt1:string,pic2:string,alt2:string,pic3:string,alt3:string) {
     return (
         <>
             <div className="filmstrip">
@@ -20,13 +21,13 @@ function Filmstrip(img1: string, imgAlt1: string, img2: string, imgAlt2: string,
                 </div>
                 <div className="filmGallery">
                 <div className="frame-1">
-                        <img src={img1} alt={imgAlt1} className="frameImg"/>
+                        <img src={pic1} alt={alt1} className="frameImg"/>
                     </div>
                     <div className="frame-2">
-                        <img src={img2} alt={imgAlt2} className="frameImg"/>
+                        <img src={pic2} alt={alt2} className="frameImg"/>
                     </div>
                     <div className="frame-3">
-                        <img src={img3} alt={imgAlt3} className="frameImg"/>
+                        <img src={pic3} alt={alt3} className="frameImg"/>
                     </div>
                 </div>
                 <div className="tractionBottom">

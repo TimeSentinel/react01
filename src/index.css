@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --header-bg-color: lightblue;
+    --header-text-color: #353535;
+    --menu-bg-color: lightblue;
+    --menu-text-color: darkgray;
+    --menu-hover-bg-color: #4970b8;
+    --menu-hover-text-color: yellow;
+    --menu-selected-bg-color: #5187bb;
+    --menu-selected-text-color: #c9f0fd;
 
-a {
+    --main-bg-color: #02023d;
+    --main-text-color: lightgray;
+
+    --footer-bg-color: #0c0f3b;
+    --footer-text-color: #3232f4;
+
 
 }
 
 body {
     @apply w-screen;
     font-size: 16px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
 
 h1 {
@@ -24,12 +40,15 @@ h3 {
     @apply font-bold text-2xl;
 }
 
-.header4 {
-    @apply bg-blue-100 w-screen h-48 border-b-2 border-blue-900 mb-1 pb-4;
+/* -------------------------------- HEADER ---------------------------------- */
+.header {
+    background-color: var(--header-bg-color);
+    @apply w-screen h-48 border-b-2 border-blue-900 mb-1 pb-4;
 }
 
 .header-title {
     @apply h-3/5 pt-4 px-6;
+    color: var(--header-text-color);
 }
 
 nav {
@@ -41,35 +60,55 @@ nav {
 }
 
 .menuItem {
-    @apply block font-bold py-2 px-3 mx-6 mb-2 text-gray-600 hover:bg-blue-900 hover:text-yellow-300 hover:no-underline;
+    color: var(--header-text-color);
+    @apply block  w-44 text-center font-bold py-2 px-3 mx-6 mb-2 hover:no-underline;
 }
 
-.menuSelected {
-    @apply block font-black py-2 px-3 mx-6 mb-2 text-blue-100 bg-blue-400 no-underline hover:no-underline;
+.menuItem:hover {
+    @apply shadow-amber-400 shadow-lg;
+    background-color: var(--menu-hover-bg-color);
+    color: var(--menu-hover-text-color);
+}
+
+.menuSelected, .menuSelected:focus, .menuSelected:hover {
+    @apply block w-44 font-black text-center py-2 px-6 mx-6 mb-2 no-underline;
+    background-color: var(--menu-selected-bg-color);
+    color: var(--menu-selected-text-color);
 }
 
 .main {
-    @apply bg-black h-4/5;
+    @apply block;
+    background-color: var(--header-bg-color);
 }
 
+/* -------------------------------- CONTENT ---------------------------------- */
 .content {
-    @apply h-3/5 bg-blue-300;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
 
-.main-head {
-    @apply bg-blue-700
+.mainHead {
+    background-color: var(--main-bg-color);
+    min-height: 160px;
+    @apply w-full;
 }
 
-.main-body {
-    height: 600px;
-    @apply block clear-both bg-gray-800 ;
+.mainBody {
+    min-height: 300px;
+    @apply w-full;
 }
 
+.mainFoot {
+    min-height: 200px;
+    @apply w-full;
+}
+
+/* -------------------------------- FOOTER ---------------------------------- */
 .footer {
-    position: fixed;
-    bottom: 0;
-    font-size: small;
-    @apply w-screen bg-gray-900 h-32 py-4 text-blue-700 text-center
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    @apply fixed w-screen h-48 py-4 text-center bottom-0;
+    z-index: 99;
 }
 
 .foot-left {
@@ -87,79 +126,14 @@ nav {
     @apply w-1/3;
 }
 
-/* ********************************************************************** */
-/* **********************  CAROUSEL ************************************* */
-.carousel-main {
-    @apply justify-center content-center;
-}
-
-/*carousel-selectors {*/
-/*    width: 20px;*/
-/*}*/
-
-.carousel-indicators {
-    @apply hidden ml-20;
-}
-
-.carousel-img  {
-    @apply block h-full m-auto;
-}
-
-.carousel-inner > .item  {
-    @apply m-auto
-}
-
-.carousel-img > img  {
-    @apply m-auto
-}
-
-.carousel-container {
-    @apply mx-auto max-h-screen bg-blue-800 border-2 border-blue-900 mb-5 shadow-md;
-}
-
-
-.carousel-summary {
-    @apply clear-both text-blue-50  ;
-}
-
-.frame1 {
-    width: 300px;
-    @apply bg-black
-}
-.frame2 {
-    width: 300px;
-    @apply bg-gray-600 p-5
-}
-.frame3 {
-    width: 300px;
-    @apply bg-red-500 h-5/6
-}
-
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
-    .carousel-indicators {
-        @apply hidden;
-    }
-
-    .carousel-img > img {
-        height: 200px;
-    }
-
-
-    .carousel-container {
-        @apply pt-6 w-3/5;
-    }
-
-    .carousel-summary {
-        @apply w-1/2 text-xl px-5 py-2;
-    }
-
-
     .navMenu {
         @apply hidden;
     }
+
     .main-body {
         height: 400px;
     }
@@ -169,25 +143,10 @@ nav {
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
-    .carousel-indicators {
-        @apply hidden;
-    }
-
-    .carousel-img > img {
-        height: 300px;
-    }
-
-    .carousel-container {
-        @apply pt-8 w-3/5;
-    }
-
-    .carousel-summary {
-        @apply w-1/2 text-xl px-10 py-4;
-    }
-
     .navMenu {
         @apply w-full;
     }
+
     .main-body {
         height: 500px;
     }
@@ -197,21 +156,10 @@ nav {
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
-    .carousel-img > img {
-        height: 400px;
-    }
-
-    .carousel-container {
-        @apply pt-8 w-3/5;
-    }
-
-    .carousel-summary {
-        @apply w-1/2 text-xl px-10 py-4;
-    }
-
     .navMenu {
         @apply w-full;
     }
+
     .main-body {
         height: 600px;
     }

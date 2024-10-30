@@ -1,22 +1,19 @@
-import Slideshow from "./slideshow.tsx";
 
-function MainContent() {
-
+function Portfolio() {
 
     return (
         <>
             <div className="mainHead">
-                <h1>Main Page</h1>
+                <h1>Portfolio</h1>
             </div>
             <div className="mainBody">
 
             </div>
             <div className="mainFoot">
-                <Slideshow/>
-            </div>
 
+            </div>
         </>
     )
 }
 
-export default MainContent;
+export default Portfolio

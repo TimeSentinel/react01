@@ -77,7 +77,7 @@ function Slideshow() {
                     {Filmstrip(filmFrameArray[3].src2, filmFrameArray[3].alt1, filmFrameArray[3].src3, filmFrameArray[3].alt2, filmFrameArray[3].src1, filmFrameArray[3].alt3,)}
                 </li>
             </ul>
-            {/*{changeMe()}*/}
+
         </>
     )
 }

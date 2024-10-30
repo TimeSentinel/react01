@@ -1,4 +1,51 @@
+import {Link} from "react-router-dom";
+
 function Header() {
+    function PageSelect(data: string) {
+        const homeClass = document.getElementById('btnHome') as HTMLInputElement
+        const portfolioClass = document.getElementById('btnPortfolio') as HTMLInputElement
+        const packagesClass = document.getElementById('btnPackages') as HTMLInputElement
+        const contactClass = document.getElementById('btnContact') as HTMLInputElement
+
+        const selection: string = data;
+        // let codePlay;
+        switch (data) {
+            case 'home':
+                homeClass.className = "menuSelected";
+                portfolioClass.className = "menuItem ";
+                packagesClass.className = "menuItem ";
+                contactClass.className = "menuItem ";
+                break;
+            case 'portfolio':
+                homeClass.className = "menuItem";
+                portfolioClass.className = "menuSelected ";
+                packagesClass.className = "menuItem ";
+                contactClass.className = "menuItem ";
+                break;
+
+            case 'packages':
+                homeClass.className = "menuItem";
+                portfolioClass.className = "menuItem ";
+                packagesClass.className = "menuSelected ";
+                contactClass.className = "menuItem ";
+                break;
+            case 'contact':
+                homeClass.className = "menuItem";
+                portfolioClass.className = "menuItem ";
+                packagesClass.className = "menuItem ";
+                contactClass.className = "menuSelected ";
+                break;
+            default:
+                homeClass.className = "menuSelected";
+                portfolioClass.className = "menuItem ";
+                packagesClass.className = "menuItem ";
+                contactClass.className = "menuItem ";
+                break;
+        }
+        return {selection}
+    }
+
+
     return (
         <>
             <div className="header-title">
@@ -22,19 +69,24 @@ function Header() {
                     <div className="navMenu" id="navbar-default">
                         <ul className="menuBar">
                             <li>
-                                <a href="#" className="menuSelected" aria-current="page">Home</a>
+                                <Link to="/" id="btnHome" className="menuSelected" onClick={() => PageSelect("home")}>
+                                    Home</Link>
                             </li>
                             <li>
-                                <a href="#" className="menuItem">About</a>
+                                <Link to="/portfolio" id="btnPortfolio" className="menuItem" onClick={() => PageSelect("portfolio")}>
+                                    Portfolio</Link>
+                            </li>
+                            {/*<li>*/}
+                            {/*    <Link to="/resume" className="menuItem" onClick={() => PageSelect("home")}>
+                            Resume</Link>*/}
+                            {/*</li>*/}
+                            <li>
+                                <Link to="/packages" id="btnPackages" className="menuItem" onClick={() => PageSelect("packages")}>
+                                    Packages</Link>
                             </li>
                             <li>
-                                <a href="#" className="menuItem">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#" className="menuItem">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#" className="menuItem">Contact</a>
+                                <Link to="/contact" id="btnContact" className="menuItem" onClick={() => PageSelect("contact")}>
+                                    Contact</Link>
                             </li>
                         </ul>
                     </div>

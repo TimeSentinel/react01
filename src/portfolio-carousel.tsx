@@ -18,7 +18,7 @@ function PortfolioCarousel() {
 
                         <div className="item active">
                             <div className="carousel-img">
-                                <img src="/images/c6pos1.png" alt="Drone Website"/></div>
+                                <img src="/src/images/c6pos1.png" alt="Drone Website"/></div>
                             <div className="carousel-summary">
                                 <h3>Drone Website</h3>
                                 <p>Customized WordPress site.</p>
@@ -30,7 +30,7 @@ function PortfolioCarousel() {
 
                         <div className="item ">
                             <div className="carousel-img">
-                                <img src="/images/c3pos2.png" alt="Travel Photo Journal"/></div>
+                                <img src="/src/images/c3pos2.png" alt="Travel Photo Journal"/></div>
                             <div className="carousel-summary">
                                 <h3>Travel Photo Journal</h3>
                                 <p>Personal photo journal project to share travel photo galleries</p>
@@ -39,7 +39,7 @@ function PortfolioCarousel() {
 
                         <div className="item">
                             <div className="carousel-img">
-                                <img src="/images/c2pos3.png" alt="M&M Cleaning Services website"/></div>
+                                <img src="/src/images/c2pos3.png" alt="M&M Cleaning Services website"/></div>
                             <div className="carousel-summary">
                                 <h3>M&M Cleaning Services</h3>
                                 <p>Local janitorial website using Joomla and Nicepage.</p>
@@ -48,7 +48,7 @@ function PortfolioCarousel() {
 
                         <div className="item">
                             <div className="carousel-img">
-                                <img src="/images/c4pos3.png" alt="Travel Info site for class"/></div>
+                                <img src="/src/images/c4pos3.png" alt="Travel Info site for class"/></div>
                             <div className="carousel-summary">
                                 <h3>Class Project</h3>
                                 <p>Goal was to create a search function that retrieved JSON data</p>

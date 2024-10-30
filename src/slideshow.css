@@ -1,25 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #slides {
-    position: relative;
-    /*height: 300px;*/
-    padding: 0;
-    margin: 0;
+    @apply relative p-0 m-0;
     list-style-type: none;
 }
 
 .slide {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    @apply absolute top-0 left-0 w-full h-full opacity-0
     z-index: 1;
 
-    /*-webkit-transition: opacity 1s;*/
-    /*-moz-transition: opacity 1s;*/
-    /*-o-transition: opacity 1s;*/
-    /*transition:  ease-out 2s;*/
+    transition: ease-in-out 1s;
     animation: left-to-right 1s linear reverse;
 }
 

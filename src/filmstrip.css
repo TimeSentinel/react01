@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Filmstrip ############################  */
 .filmstrip {
-    background: #1d0d03;
+    background: #030c1d;
     @apply w-full relative my-auto shadow-lg shadow-gray-600;
 }
 
@@ -29,19 +31,29 @@
     @apply bg-gray-500 overflow-hidden border-2 border-gray-500 rounded-2xl;
 
 }
-@-webkit-keyframes left-to-right{
-    from{left:-100%}
-    to{left:0}
+
+@-webkit-keyframes left-to-right {
+    from {
+        left: -100%
+    }
+    to {
+        left: 0
+    }
 }
 
-@keyframes left-to-right{
-    from{left:-100%}
-    to{left:0}
+@keyframes left-to-right {
+    from {
+        left: -100%
+    }
+    to {
+        left: 0
+    }
 }
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
+
     .filmstrip {
         height: 260px;
     }
@@ -77,6 +89,7 @@
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
+
     .filmstrip {
         height: 300px;
     }
@@ -113,6 +126,7 @@
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
+
     .filmstrip {
         height: 400px;
     }

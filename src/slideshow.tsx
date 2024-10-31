@@ -1,7 +1,8 @@
-import images from './images/slideImages.ts'
+import {images} from './images/slideImages.ts'
 import Filmstrip from "./filmstrip.tsx";
 import './slideshow.css'
 
+console.log(images.length)
 document.addEventListener("DOMContentLoaded",
     function () {
         const slideInterval: number = setInterval(nextSlide, 3000);

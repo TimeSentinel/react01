@@ -33,7 +33,7 @@ export const images: { image: string, alt: string } [] = [
     {image: imgBase + '031.webp', alt: 'image 31'},
     {image: imgBase + '032.webp', alt: 'image 32'},
     {image: imgBase + '033.webp', alt: 'image 33'},
-    // {image: imgBase + '034.webp', alt: 'image 34'},
+    {image: imgBase + '034.webp', alt: 'missing image'},
     {image: imgBase + '035.webp', alt: 'image 35'},
     {image: imgBase + '036.webp', alt: 'image 36'},
     {image: imgBase + '037.webp', alt: 'image 37'},
@@ -91,7 +91,7 @@ export const images: { image: string, alt: string } [] = [
     {image: imgBase + '089.webp', alt: 'image 89'},
     {image: imgBase + '090.webp', alt: 'image 90'},
 ]
-export default images;
+
 
 
 

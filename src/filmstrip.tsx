@@ -1,9 +1,7 @@
 import './filmstrip.css'
 
-
 function Filmstrip(pic1:string,alt1:string,pic2:string,alt2:string,pic3:string,alt3:string) {
     return (
-        <>
             <div className="filmstrip">
                 <div className="tractionTop">
                     <div className="traction"></div>
@@ -45,9 +43,6 @@ function Filmstrip(pic1:string,alt1:string,pic2:string,alt2:string,pic3:string,a
                     <div className="traction"></div>
                 </div>
             </div>
-
-        </>
     )
 }
-
 export default Filmstrip;

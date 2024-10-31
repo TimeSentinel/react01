@@ -9,9 +9,10 @@ function MainContent() {
                 <h1>Main Page</h1>
             </div>
             <div className="mainBody">
-
+                Main Body
             </div>
             <div className="mainFoot">
+
                 <Slideshow/>
             </div>
 

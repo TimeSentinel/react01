@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 :root {
-    --header-bg-color: lightblue;
-    --header-text-color: #353535;
-    --menu-bg-color: lightblue;
+    --header-bg-color: #a5cafa;
+    --header-text-color: #040f47;
+    --menu-bg-color: #a5cafa;
     --menu-text-color: darkgray;
     --menu-hover-bg-color: #4970b8;
     --menu-hover-text-color: yellow;
-    --menu-selected-bg-color: #5187bb;
+    --menu-selected-bg-color: #5f9edb;
     --menu-selected-text-color: #c9f0fd;
 
-    --main-bg-color: #02023d;
-    --main-text-color: lightgray;
+    --main-bg-color: lightgray;
+    --main-page-color: #c1c0c0;
+    --main-text-color: #434369;
+    --main-page-border-color: #777676;
 
-    --footer-bg-color: #0c0f3b;
-    --footer-text-color: #3232f4;
+    /*--footer-bg-color: #0c0f3b;*/
+    --footer-bg-color: #010a35;
+    --footer-text-color: #1cfbfb;
 
 
 }
@@ -33,35 +36,54 @@ h1 {
 }
 
 h2 {
-    @apply font-bold text-xl;
+    @apply font-bold text-3xl;
 }
 
 h3 {
     @apply font-bold text-2xl;
 }
 
-/* -------------------------------- HEADER ---------------------------------- */
+/* --------------------------------Framework--------------------------------- */
 .header {
     background-color: var(--header-bg-color);
-    @apply w-screen h-48 border-b-2 border-blue-900 mb-1 pb-4;
+    border-color: var(--header-text-color);
+    @apply block w-full border-b-2;
+    min-height: 140px;
 }
 
+.content {
+    background-color: var(--main-page-color);
+    color: var(--main-text-color);
+    border-color: var(--main-page-border-color);
+    @apply block w-5/6 mx-auto pb-8 clear-both;
+    @apply border-x-2 shadow-lg shadow-blue-400;
+    min-height: 400px;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    @apply block w-screen py-20 text-center;
+    min-height: 200px;
+}
+
+/* -------------------------------- HEADER ---------------------------------- */
 .header-title {
     @apply h-3/5 pt-4 px-6;
     color: var(--header-text-color);
 }
 
 nav {
-    @apply h-2/5 px-20 mb-4;
+    @apply p-4;
 }
 
 .menuBar {
-    @apply font-medium flex flex-col p-4 rounded-lg md:flex-row space-x-8 rtl:space-x-reverse md:mt-0 ;
+    @apply font-medium flex flex-row;
 }
 
 .menuItem {
     color: var(--header-text-color);
-    @apply block  w-44 text-center font-bold py-2 px-3 mx-6 mb-2 hover:no-underline;
+    @apply block w-44 text-center font-bold py-2 px-3 mx-6 mb-2 mt-auto hover:no-underline;
 }
 
 .menuItem:hover {
@@ -76,41 +98,25 @@ nav {
     color: var(--menu-selected-text-color);
 }
 
-.main {
-    @apply block;
-    background-color: var(--header-bg-color);
-}
+
 
 /* -------------------------------- CONTENT ---------------------------------- */
-.content {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-}
-
 .mainHead {
-    background-color: var(--main-bg-color);
     min-height: 160px;
-    @apply w-full;
+    @apply block w-full p-6;
 }
 
 .mainBody {
-    min-height: 300px;
-    @apply w-full;
+    min-height: 1300px;
+    @apply block w-full p-6;
 }
 
 .mainFoot {
-    min-height: 200px;
-    @apply w-full;
+    min-height: 400px;
+    @apply block py-4 w-full h-fit;
 }
 
 /* -------------------------------- FOOTER ---------------------------------- */
-.footer {
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    @apply fixed w-screen h-48 py-4 text-center bottom-0;
-    z-index: 99;
-}
-
 .foot-left {
     text-align: center;
     @apply w-1/3;

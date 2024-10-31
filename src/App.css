@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 #root {
-    @apply items-stretch h-screen bg-gray-950;
+    @apply items-stretch h-screen ;
 }
 

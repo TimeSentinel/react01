@@ -1,22 +1,18 @@
-
-function MainContent() {
-
+function Freelance() {
 
     return (
         <>
             <div className="mainHead">
-                <h1>Main Page</h1>
+                <h1>Freelancer Portfolio / Small Business Site</h1>
             </div>
             <div className="mainBody">
-                Main Body
+
             </div>
             <div className="mainFoot">
 
-
             </div>
-
         </>
     )
 }
 
-export default MainContent;
+export default Freelance;

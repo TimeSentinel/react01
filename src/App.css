@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 #root {
-    @apply items-stretch h-screen ;
+    @apply h-screen ;
 }
 

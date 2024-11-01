@@ -1,10 +1,8 @@
-
-function Packages () {
-
+function Restaurant() {
     return (
         <>
             <div className="mainHead">
-                <h1>Packages</h1>
+                <h1>Restaurant / Food Service Sites</h1>
             </div>
             <div className="mainBody">
 
@@ -16,4 +14,4 @@ function Packages () {
     )
 }
 
-export default Packages;
+export default Restaurant;

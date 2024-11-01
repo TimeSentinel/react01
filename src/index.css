@@ -120,7 +120,7 @@ nav {
 
 .mainFoot {
     min-height: 400px;
-    @apply block py-4 w-full h-fit;
+    @apply block p-6 w-full h-fit;
 }
 
 /* -------------------------------- FOOTER ---------------------------------- */

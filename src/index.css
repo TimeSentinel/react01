@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-    --header-bg-color: #a5cafa;
+    --header-bg-color: #b1b5b9;
     --header-text-color: #040f47;
-    --menu-bg-color: #a5cafa;
-    --menu-text-color: darkgray;
-    --menu-hover-bg-color: #4970b8;
-    --menu-hover-text-color: yellow;
-    --menu-selected-bg-color: #5f9edb;
-    --menu-selected-text-color: #c9f0fd;
+    --menu-bg-color: #bac0c5;
+    --menu-text-color: #606c8f;
+    --menu-hover-bg-color: #99a8ba;
+    --menu-hover-text-color: #fffaba;
+    --menu-selected-bg-color: #7389a8;
+    --menu-selected-text-color: #ffedb5;
 
     --main-bg-color: lightgray;
-    --main-page-color: #c1c0c0;
+    --main-page-color: #b9c1c5;
     --main-text-color: #434369;
     --main-page-border-color: #777676;
 
@@ -91,12 +91,14 @@ nav {
 }
 
 .menuItem {
-    color: var(--header-text-color);
+    color: var(--menu-text-color);
     @apply block w-44 text-center font-bold py-2 px-3 mx-6 mb-2  hover:no-underline;
+
 }
 
 .menuItem:hover {
     @apply shadow-amber-400 shadow-lg;
+
     background-color: var(--menu-hover-bg-color);
     color: var(--menu-hover-text-color);
 }

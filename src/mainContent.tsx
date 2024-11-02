@@ -23,34 +23,38 @@ function MainContent() {
                     <br/>
                     All my sites are designed and tested to insure they look good in most environments.
                 </p>
+                <br/>
                 <h3>Every site is tested on the following:</h3>
-                <div className="table-container">
-                    <div className="column-4">
-                        <h3>OS/System</h3>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Mac</li>
-                            <li>Windows</li>
-                        </ul>
+                <div className="table-half">
+                    <div className="table-row">
+                        <div className="column-4 table-title">OS/System</div>
+                        <div className="column-4 table-title">Devices</div>
+                        <div className="column-4 table-title">Browsers</div>
                     </div>
-                    <div className="column-4">
-                        <h3>Devices</h3>
-                        <ul>
-                            <li>Desktop</li>
-                            <li>Tablet</li>
-                            <li>Mobile</li>
-                        </ul>
-                    </div>
-
-                    <div className="column-4">
-                        <h3>Browsers</h3>
-                        <ul>
-                            <li>Chrome</li>
-                            <li>Firefox</li>
-                            <li>Vivaldi</li>
-                            <li>Sarari</li>
-                            <li>Edge</li>
-                        </ul>
+                    <div className="table-row">
+                        <div className="column-4">
+                            <ul>
+                                <li>Linux</li>
+                                <li>Mac</li>
+                                <li>Windows</li>
+                            </ul>
+                        </div>
+                        <div className="column-4">
+                            <ul>
+                                <li>Desktop</li>
+                                <li>Tablet</li>
+                                <li>Mobile</li>
+                            </ul>
+                        </div>
+                        <div className="column-4">
+                            <ul>
+                                <li>Chrome</li>
+                                <li>Firefox</li>
+                                <li>Vivaldi</li>
+                                <li>Sarari</li>
+                                <li>Edge</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,6 +65,7 @@ function MainContent() {
             <div className="mainFoot">
                 <h3>Thanks for checking out my site!</h3>
                 <div className="imageFrame1"></div>
+                <br/><br/><br/><br/>
             </div>
 
         </>

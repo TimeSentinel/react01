@@ -1,3 +1,12 @@
+/*
+Custom Filmstrip Module - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Files Required slideshow.tsx, slideshow.css, filmstrip.tsx, filmstrip.css
+Images must be listed in /photos/slideImages.ts
+Requires React.JS, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+######################################################################################
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +27,7 @@
 }
 
 .traction {
-    @apply bg-gray-700 border-l-2 border-t-2 border-gray-500 my-3;
+    @apply bg-gray-400 border-l-2 border-t-2 border-gray-500 my-3;
 }
 
 .filmGallery {

@@ -1,3 +1,12 @@
+/*
+Custom Filmstrip Module - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Files Required slideshow.tsx, slideshow.css, filmstrip.tsx, filmstrip.css
+Images must be listed in /photos/slideImages.ts
+Requires React.JS, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+######################################################################################
+ */
+
 import {images} from './images/slideImages.ts'
 import Filmstrip from "./filmstrip.tsx";
 import './slideshow.css'

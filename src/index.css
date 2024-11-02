@@ -1,8 +1,15 @@
+/*
+Portfolio Main Stylesheet - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
+######################################################################################
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+    /* ---------- Header Colors ---------- */
     --header-bg-color: #b1b5b9;
     --header-text-color: #040f47;
     --menu-bg-color: #bac0c5;
@@ -12,15 +19,17 @@
     --menu-selected-bg-color: #7389a8;
     --menu-selected-text-color: #ffedb5;
 
+    /* ---------- Content Colors ---------- */
     --main-bg-color: lightgray;
     --main-page-color: #b9c1c5;
     --main-text-color: #434369;
     --main-page-border-color: #777676;
 
-    /*--footer-bg-color: #0c0f3b;*/
+    /* ---------- Footer Colors ---------- */
     --footer-bg-color: #010a35;
     --footer-text-color: #1cfbfb;
 
+    /* ---------- MISC Colors ---------- */
     --imageFrame-border-color: rgba(23, 19, 12, 0.66);
 }
 
@@ -32,15 +41,15 @@ body {
 }
 
 h1 {
-    @apply font-bold text-4xl;
+    @apply font-bold text-4xl mt-4 pb-2;
 }
 
 h2 {
-    @apply font-bold text-3xl;
+    @apply font-bold text-3xl mt-4 pb-2;
 }
 
 h3 {
-    @apply font-bold text-2xl;
+    @apply font-bold text-2xl mt-4 pb-2;
 }
 
 /* --------------------------------Framework--------------------------------- */
@@ -150,6 +159,67 @@ nav {
     background-size: cover;
     background-position: center;
 }
+
+/* ########################### CSS Grid ########################### */
+.table-full{
+    @apply w-full my-4;
+}
+.table-half{
+    @apply w-1/2 my-4;
+}
+.table-row, .table-title {
+    min-height: 20px;
+    @apply inline-flex w-full px-2;
+}
+.table-title {
+    @apply font-bold text-2xl ;
+    @apply border-b-2;
+    border-color: var(--main-page-border-color)
+}
+.column-1,.column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8 {
+    @apply py-1 px-4 mx-2;
+}
+.column-9, .column-10, .column-11, .column-12 {
+    @apply p-1  mx-2;
+    @apply border-orange-400 border-2;
+}
+.column-1  {
+    @apply w-1/12 ;
+}
+.column-2 {
+    @apply w-2/12 ;
+}
+.column-3 {
+    @apply w-3/12 ;
+}
+.column-4 {
+    @apply w-4/12 ;
+}
+.columnn-5 {
+    @apply w-5/12 ;
+}
+.column-6 {
+    @apply w-6/12 ;
+}
+.column-7 {
+    @apply w-7/12 ;
+}
+.column-8 {
+    @apply w-8/12 ;
+}
+.column-9 {
+    @apply w-9/12 ;
+}
+.column-10 {
+    @apply w-10/12 ;
+}
+.column-11 {
+    @apply w-11/12 ;
+}
+.column-12 {
+    @apply w-full ;
+}
+
 
 
 /* ########################### Project Layouts ########################### */

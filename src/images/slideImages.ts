@@ -1,3 +1,12 @@
+/*
+Custom Filmstrip Module - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Files Required slideshow.tsx, slideshow.css, filmstrip.tsx, filmstrip.css
+Images must be listed in /photos/slideImages.ts
+Requires React.JS, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+######################################################################################
+ */
+
 const imgBase: string = '/src/images/samples/photos/' //image folder
 export const images: { image: string, alt: string } [] = [
     {image: imgBase + '001.webp', alt: 'image 1'},

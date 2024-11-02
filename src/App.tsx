@@ -1,7 +1,7 @@
 import './App.css'
 import Header from "./header.tsx";
 import Footer from "./footer.tsx";
-import MainContent from "./portfolioContent.tsx";
+import MainContent from "./mainContent.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Portfolio from "./portfolio.tsx";
 import Freelance from "./freelance.tsx";

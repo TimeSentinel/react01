@@ -31,12 +31,14 @@ function Portfolio() {
                             <div className="project-item">
                                 <div className="project-description">
                                     <p>
-                                        A local (<i>to me</i>) start-up cnc machine shop.<br/><br/>
-                                        His initial goal with this website was just to have a web presence to give his
-                                        business legitimacy. He started with no photos or content. We worked together to
-                                        create a launching point for his new businees.<br/><br/>
-                                        I started with a figma prototype to workout the general flow of the site<br/><br/>
-                                        For now, he is satisfied with a simple three-page layout, but is planning on adding
+                                        The owner of a local (<i>to me</i>) start-up cnc machine shop wanted a website
+                                        to give him an online presence. The project was driven by the desire to give
+                                        his cnc business some legitimacy. He started with no photos or content, so we had
+                                        to start mostly from scratch. <br/><br/>
+                                        An AI generated logo was the inspiration for the color palette and basic theme. <br/><br/>
+                                        I started with a figma prototype to workout the general flow of the site and get his
+                                        approval to move forward with the project.<br/><br/>
+                                        For now, he is satisfied with a simple three-page layout, but we are already planning on adding
                                          a gallery and online shop in the near future.
                                         <br/><br/>
                                         The site was coded using Vite-React-Typescript with Tailwind CSS.
@@ -123,7 +125,7 @@ function Portfolio() {
                 {/* content sectionj */}
 
                 <div className="content-section">
-                    <h2>Other Types</h2>
+                    <h2>Specialty Projects</h2>
                     <div className="projects">
                         {/*----- project card -----    */}
                         <div className="project-card">

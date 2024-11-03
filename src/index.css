@@ -21,6 +21,7 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
 
     /* ---------- Content Colors ---------- */
     --main-bg-color: lightgray;
+    --main-bg-light-color: #ced5d8;
     --main-page-color: #b9c1c5;
     --main-text-color: #434369;
     --main-page-border-color: #777676;
@@ -31,6 +32,8 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
 
     /* ---------- MISC Colors ---------- */
     --imageFrame-border-color: rgba(23, 19, 12, 0.66);
+    --imageFrame-dark-border-color: rgb(12, 12, 12);
+    --highlight-color: #fbdda3;
 }
 
 body {
@@ -161,65 +164,81 @@ nav {
 }
 
 /* ########################### CSS Grid ########################### */
-.table-full{
+.table-full {
     @apply w-full my-4;
 }
-.table-half{
+
+.table-half {
     @apply w-1/2 my-4;
 }
+
 .table-row, .table-title {
     min-height: 20px;
     @apply inline-flex w-full px-2;
 }
+
 .table-title {
     @apply font-bold text-2xl ;
     @apply border-b-2;
     border-color: var(--main-page-border-color)
 }
-.column-1,.column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8 {
+
+.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8 {
     @apply py-1 px-4 mx-2;
 }
+
 .column-9, .column-10, .column-11, .column-12 {
     @apply p-1  mx-2;
     @apply border-orange-400 border-2;
 }
-.column-1  {
+
+.column-1 {
     @apply w-1/12 ;
 }
+
 .column-2 {
     @apply w-2/12 ;
 }
+
 .column-3 {
     @apply w-3/12 ;
 }
+
 .column-4 {
     @apply w-4/12 ;
 }
+
 .columnn-5 {
     @apply w-5/12 ;
 }
+
 .column-6 {
     @apply w-6/12 ;
 }
+
 .column-7 {
     @apply w-7/12 ;
 }
+
 .column-8 {
     @apply w-8/12 ;
 }
+
 .column-9 {
     @apply w-9/12 ;
 }
+
 .column-10 {
     @apply w-10/12 ;
 }
+
 .column-11 {
     @apply w-11/12 ;
 }
+
 .column-12 {
     @apply w-full ;
 }
-
 
 
 /* ########################### Project Layouts ########################### */
@@ -237,50 +256,68 @@ nav {
 }
 
 .project-card {
-    @apply w-full h-fit mt-2;
-    @apply border-2 border-orange-400;
+    @apply w-full h-fit mt-2 mb-4 ;
+    background-color: var(--main-bg-light-color);
 }
 
 .project-title {
-    @apply w-full pt-4 px-2 mx-auto;
+    @apply w-full py-2 px-4 mx-auto;
     background-color: var(--main-text-color);
 
     h3 {
-        @apply font-bold text-2xl;
+        @apply font-extrabold text-3xl;
         color: var(--main-bg-color);
     }
 
-    @apply border-2 border-green-400;
 }
 
 .project-item {
-    @apply flex flex-row w-full;
-    @apply border-2 border-blue-400;
+    @apply flex flex-row w-full p-2;
 }
 
 .project-description {
     @apply w-7/12;
 
     p {
-
+        @apply text-2xl;
     }
-
-    @apply border-2 border-purple-400;
 }
 
 .project-frame {
     @apply flex flex-col w-5/12;
-    @apply border-2 border-amber-400;
 }
 
 .project-img {
-    @apply w-full min-h-28;
-
+    @apply min-h-28 m-6 border-2;
+    background-color: var(--menu-bg-color);
+    border-color: var(--imageFrame-dark-border-color);
     img {
-        @apply w-full min-h-full;
+        @apply w-full ;
+
     }
 }
+.project-img:hover {
+    transform: scale(1.5);
+}
+.liveLink {
+    @apply my-12 w-32 h-12 pt-1.5;
+    @apply mx-auto text-2xl text-center text-blue-600 font-bold no-underline;
+    @apply border-2 border-blue-500 bg-blue-300;
+}
 
+.liveLink:hover {
+    @apply bg-blue-100 shadow-blue-300 shadow-lg no-underline;
+
+}
+
+.liveLink:active, .liveLink > a {
+    @apply no-underline;
+}
+.caption {
+    @apply w-full text-center text-xl bg-black pt-1;
+    background-color: var(--main-bg-color);
+    color: var(--menu-text-color)
+}
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {

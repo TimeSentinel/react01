@@ -34,6 +34,9 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
     --imageFrame-border-color: rgba(23, 19, 12, 0.66);
     --imageFrame-dark-border-color: rgb(12, 12, 12);
     --highlight-color: #fbdda3;
+    --semidark-text-color: #636399;
+    --review-color: #434369;
+    --link-color: #2d8deb;
 }
 
 body {
@@ -85,21 +88,22 @@ h3 {
 
 /* -------------------------------- HEADER ---------------------------------- */
 .header-title {
-    @apply pt-4 px-12;
+    @apply flex flex-row w-full pt-4 px-8 relative;
     color: var(--header-text-color);
 
     h1 {
         @apply font-bold text-4xl
     }
+    img {
+        @apply w-72 p-4;
+    }
 }
-
-nav {
-
+.headName {
+    @apply w-3/12 ml-8;
 }
 
 .menuBar {
-    @apply flex justify-center bottom-0 mt-20 mx-auto;
-
+    @apply w-fit flex flex-row absolute bottom-0;
 }
 
 .menuItem {
@@ -126,6 +130,10 @@ nav {
 .mainHead {
     min-height: 160px;
     @apply block w-full p-6;
+}
+.mainHead li {
+    @apply font-bold text-2xl leading-tight pl-6 pb-2 underline;
+    color: var(--link-color)
 }
 
 .mainBody {
@@ -262,7 +270,7 @@ nav {
 
 .project-title {
     @apply w-full py-2 px-4 mx-auto;
-    background-color: var(--main-text-color);
+    background-color: var(--semidark-text-color);
 
     h3 {
         @apply font-extrabold text-3xl;
@@ -276,7 +284,7 @@ nav {
 }
 
 .project-description {
-    @apply w-7/12;
+    @apply w-7/12 p-6;
 
     p {
         @apply text-2xl;
@@ -291,33 +299,50 @@ nav {
     @apply min-h-28 m-6 border-2;
     background-color: var(--menu-bg-color);
     border-color: var(--imageFrame-dark-border-color);
+
     img {
         @apply w-full ;
 
     }
 }
+
 .project-img:hover {
     transform: scale(1.5);
 }
+
 .liveLink {
-    @apply my-12 w-32 h-12 pt-1.5;
+    @apply my-24 w-48 h-16 pt-3;
     @apply mx-auto text-2xl text-center text-blue-600 font-bold no-underline;
     @apply border-2 border-blue-500 bg-blue-300;
 }
 
 .liveLink:hover {
-    @apply bg-blue-100 shadow-blue-300 shadow-lg no-underline;
+    @apply bg-blue-100 shadow-blue-300 shadow-lg no-underline text-3xl;
 
 }
 
 .liveLink:active, .liveLink > a {
     @apply no-underline;
 }
+
 .caption {
-    @apply w-full text-center text-xl bg-black pt-1;
+    @apply w-full text-center text-xl bg-black pt-1 border-t-2;
     background-color: var(--main-bg-color);
+    border-color: var(--imageFrame-dark-border-color);
     color: var(--menu-text-color)
 }
+
+.review {
+    @apply w-4/6 text-left text-xl italic mx-auto my-16;
+    color: var(--review-color);
+}
+
+.divider {
+    @apply w-4/5 mx-auto mt-12 border-4;
+    border-color: var(--semidark-text-color)
+}
+
+
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {

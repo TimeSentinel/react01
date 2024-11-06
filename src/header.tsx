@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Lance from './images/lance800.webp'
 
 function Header() {
     function PageSelect(data: string) {
@@ -75,11 +76,11 @@ function Header() {
 
     return (
         <>
-            <div className="header-title">
-                <h1>Lance Stubblefield</h1>
-            </div>
 
-            <nav>
+            <div className="header-title">
+                <div className="headImg"><img src={Lance} alt="Lance on beach"/></div>
+                <div className="headName"><h1>Lance Stubblefield</h1></div>
+
 
                     <div className="navMenu" id="navbar-default">
                         <ul className="menuBar">
@@ -115,7 +116,7 @@ function Header() {
                         </ul>
                     </div>
 
-            </nav>
+            </div>
 
 
         </>

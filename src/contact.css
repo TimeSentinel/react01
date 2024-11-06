@@ -1,0 +1,158 @@
+
+
+/* #################################### CONTACT ############################################ */
+.contactContent {
+    @apply m-auto ;
+}
+
+.contactContent h1 {
+    @apply block;
+}
+
+.contactCard {
+    @apply w-3/5 flex flex-wrap text-center;
+}
+
+.formInput {
+    @apply cursor-text bg-amber-50 border-2 rounded-lg ;
+    color: #106aa0;
+    border-color: #fe7023;
+}
+
+#formMessage {
+    @apply block mx-auto border-2 bg-amber-50 rounded-lg;
+    color: #106aa0;
+    border-color: #fe7023;
+}
+
+#formFile {
+    @apply block mx-auto bg-amber-50 mt-8 rounded-lg;
+    color: #106aa0;
+
+}
+
+#formButton {
+    @apply border-green-700 bg-green-200 text-green-600 rounded-lg;
+}
+
+#clearButton {
+    @apply border-orange-700 bg-orange-200 text-orange-600 rounded-lg;
+}
+
+#formButton:hover {
+    @apply shadow-green-300 shadow-2xl;
+    transform: scale(1.1);
+}
+
+#clearButton:hover {
+    @apply shadow-amber-300 shadow-2xl;
+    transform: scale(1.1);
+}
+
+.errorMsg {
+    @apply block text-red-600 font-bold text-lg mt-0;
+}
+
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 660px) {
+
+    .contactContainer {
+        @apply block mx-auto bg-orange-950 py-10 border-2 border-orange-400 rounded-3xl;
+    }
+
+    .formInput {
+        @apply ml-2
+    }
+
+    .leftPane {
+        @apply w-4/5 text-left mx-auto mt-5;
+    }
+
+    .leftPane img {
+        @apply hidden;
+    }
+
+    .rightPane {
+        @apply mr-24;
+    }
+
+    .formInput {
+        @apply h-10 w-64 mx-2 my-2 p-1;
+    }
+
+    #formMessage {
+    @apply w-64 h-24 mt-3 p-1;
+    }
+
+    #formButton, #clearButton {
+    @apply w-16 h-10 m-2 border-2 text-sm;
+    }
+
+}
+
+/* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 661px) and (max-width: 1000px) {
+
+    .contactContainer {
+        @apply flex flex-wrap w-full justify-center mt-8;
+    }
+
+    .leftPane {
+        @apply w-2/5 text-left;
+    }
+
+    .rightPane {
+        @apply w-2/5;
+    }
+
+    .formInput {
+        @apply h-12 w-72 mx-2 my-3 p-2;
+    }
+
+    #formMessage {
+    @apply w-72 h-36 mt-4 p-2;
+    }
+
+    #formButton, #clearButton {
+    @apply w-28 h-12 m-3 border-2 text-lg;
+    }
+
+}
+
+/* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 1001px) {
+
+    .contactContainer {
+        @apply flex w-4/5 mx-auto ;
+    }
+
+    .leftPane {
+        @apply w-2/6 text-left ;
+    }
+
+    .rightPane {
+        @apply w-4/6;
+    }
+
+    .formInput {
+        @apply w-4/5 h-16 mx-auto mt-4 p-2;
+    }
+
+    #formMessage {
+    @apply w-4/5 h-36 mx-auto mt-6 p-2;
+    }
+
+    #formButton, #clearButton {
+    @apply w-36 h-12 pb-2 m-6 border-2 font-bold text-xl;
+    }
+
+}
+
+/* ------------ End Desktop ------------ */
+
+/* ##########------------ End Media ------------########## */

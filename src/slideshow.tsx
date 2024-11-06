@@ -6,6 +6,7 @@ Images must be listed in /photos/slideImages.ts
 Requires React.JS, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
 ######################################################################################
  */
+/* todo: error handling */
 
 import {images} from './images/slideImages.ts'
 import Filmstrip from "./filmstrip.tsx";

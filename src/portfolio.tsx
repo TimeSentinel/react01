@@ -1,3 +1,11 @@
+/*
+React Portfolio Project - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Vite, React.JS, React-Router-Dom, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+portfolio.tsx
+######################################################################################
+ */
+
 import CRPfigma from './images/cnc-figma.webp'
 import CRPhome from './images/cnc-home.webp'
 import CRPcontact from './images/cnc-contact.webp'
@@ -209,14 +217,14 @@ function Portfolio() {
                                     </p>
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><a href="https://lance.aervela.com"><img src={LS2}
-                                                                                                          alt="Lance's previous portfolio site"/></a>
+                                    <div className="project-img"><a href="https://lance.aervela.com" target="_blank">
+                                        <img src={LS2} alt="Lance's previous portfolio site"/></a>
                                     </div>
-                                    <div className="project-img"><a href="https://photo.sol3.one"><img src={LS3}
-                                                                                                       alt="Lance's photo portfolio"/></a>
+                                    <div className="project-img"><a href="https://photo.sol3.one" target="_blank">
+                                        <img src={LS3} alt="Lance's photo portfolio"/></a>
                                     </div>
-                                    <div className="project-img"><a href="https://lance.allppl.me"><img src={LS1}
-                                                                                                        alt="Lance's sample gallery"/></a>
+                                    <div className="project-img"><a href="https://lance.allppl.me" target="_blank">
+                                        <img src={LS1} alt="Lance's sample gallery"/></a>
                                     </div>
 
                                 </div>

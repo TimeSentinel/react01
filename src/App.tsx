@@ -1,3 +1,11 @@
+/*
+React Portfolio Project - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Vite, React.JS, React-Router-Dom, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+app.tsx
+######################################################################################
+ */
+
 import './App.css'
 import Header from "./header.tsx";
 import Footer from "./footer.tsx";

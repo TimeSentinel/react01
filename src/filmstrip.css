@@ -148,7 +148,6 @@ Requires React.JS, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
         @apply justify-between ;
     }
 
-    /*ToDo lock image aspect ratio*/
     .frameImg {
         @apply h-full;
     }

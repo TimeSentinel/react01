@@ -1,3 +1,11 @@
+/*
+React Portfolio Project - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Vite, React.JS, React-Router-Dom, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+contact.tsx; web3forms used for form submission
+######################################################################################
+ */
+
 import React from "react";
 import {useForm} from "react-hook-form";
 import './contact.css'

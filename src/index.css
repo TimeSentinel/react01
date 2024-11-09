@@ -1,4 +1,5 @@
 /*
+Portfolio Project
 Portfolio Main Stylesheet - (c)2024 Lance Stubblefield
 --------------------------------------------------------------------------------------
 Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
@@ -22,10 +23,11 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
     /* ---------- Content Colors ---------- */
     --main-bg-color: lightgray;
     --main-bg-light-color: #ced5d8;
+    --main-bg-xlight-color: #e9f1f4;
     --main-page-color: #b9c1c5;
     --main-text-color: #434369;
     --main-page-border-color: #777676;
-
+    --main-light-border-color: #bdbbbb;
     /* ---------- Footer Colors ---------- */
     --footer-bg-color: #010a35;
     --footer-text-color: #1cfbfb;
@@ -35,6 +37,7 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
     --imageFrame-dark-border-color: rgb(12, 12, 12);
     --highlight-color: #fbdda3;
     --semidark-text-color: #636399;
+    --light-text-color: #eff0f3;
     --review-color: #434369;
     --link-color: #2d8deb;
 }
@@ -84,45 +87,6 @@ h3 {
     color: var(--footer-text-color);
     @apply block w-screen py-20 text-center;
     min-height: 200px;
-}
-
-/* -------------------------------- HEADER ---------------------------------- */
-.header-title {
-    @apply flex flex-row w-full pt-4 px-8 relative;
-    color: var(--header-text-color);
-
-    h1 {
-        @apply font-bold text-4xl
-    }
-    img {
-        @apply w-72 p-4;
-    }
-}
-.headName {
-    @apply w-3/12 ml-8;
-}
-
-.menuBar {
-    @apply w-fit flex flex-row absolute bottom-0;
-}
-
-.menuItem {
-    color: var(--menu-text-color);
-    @apply block w-44 text-center font-bold py-2 px-3 mx-6 mb-2  hover:no-underline;
-
-}
-
-.menuItem:hover {
-    @apply shadow-amber-400 shadow-lg;
-
-    background-color: var(--menu-hover-bg-color);
-    color: var(--menu-hover-text-color);
-}
-
-.menuSelected, .menuSelected:focus, .menuSelected:hover {
-    @apply block w-44 font-black text-center py-2 px-6 mx-6 mb-2 no-underline;
-    background-color: var(--menu-selected-bg-color);
-    color: var(--menu-selected-text-color);
 }
 
 
@@ -346,10 +310,6 @@ h3 {
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
-    .navMenu {
-        @apply hidden;
-    }
-
     .main-body {
         height: 400px;
     }
@@ -365,10 +325,6 @@ h3 {
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
-    .navMenu {
-        @apply w-full;
-    }
-
     .main-body {
         height: 500px;
     }
@@ -382,10 +338,6 @@ h3 {
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
-    .navMenu {
-        @apply w-full;
-    }
-
     .main-body {
         height: 600px;
     }
@@ -401,6 +353,3 @@ h3 {
 /* ##########------------ End Media ------------########## */
 
 
-/* todo: need project images to stack.. minimum of three
-    todo: need to add links to project pages (portfolio links to live sites and packages pages for demonstrations)
- */

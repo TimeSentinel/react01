@@ -1,3 +1,11 @@
+/*
+React Portfolio Project - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Vite, React.JS, React-Router-Dom, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+mainContent.tsx: home/root page
+######################################################################################
+ */
+
 function MainContent() {
 
 

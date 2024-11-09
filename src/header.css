@@ -1,0 +1,93 @@
+/* -------------------------------- HEADER ---------------------------------- */
+.header-title {
+    @apply flex flex-row w-full pt-4 px-8 relative;
+    color: var(--header-text-color);
+
+    h1 {
+        @apply font-bold text-4xl
+    }
+    img {
+        @apply w-72 p-4;
+    }
+}
+.headName {
+    @apply block w-5/12 h-16 ml-8;
+}
+
+.menuBar {
+    @apply w-fit flex flex-row absolute bottom-0;
+}
+
+.menuItem {
+    color: var(--menu-text-color);
+    @apply text-center font-bold hover:no-underline;
+}
+
+.menuItem:hover {
+    @apply shadow-amber-400 shadow-lg;
+    background-color: var(--menu-hover-bg-color);
+    color: var(--menu-hover-text-color);
+}
+
+.menuSelected, .menuSelected:focus, .menuSelected:hover {
+    @apply block w-44 font-black text-center py-2 px-6 mx-6 mb-2 no-underline;
+    background-color: var(--menu-selected-bg-color);
+    color: var(--menu-selected-text-color);
+}
+
+
+
+
+
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 767px) {
+    .navMenu {
+        @apply hidden;
+    }
+    .menuBar {
+        @apply  left-48;
+    }
+    .menuItem {
+        color: var(--menu-text-color);
+        @apply w-full py-0 px-1 mb-1 ;
+    }
+}
+
+/* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navMenu {
+        @apply w-4/5;
+    }
+    .menuBar {
+        @apply  left-64;
+    }
+    .menuItem {
+        color: var(--menu-text-color);
+        @apply block w-36 py-1 px-2 mx-3 mb-2 ;
+    }
+}
+
+/* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 992px) {
+    .navMenu {
+        @apply w-full;
+    }
+    .menuBar {
+        @apply  left-80;
+    }
+    .menuItem {
+        color: var(--menu-text-color);
+        @apply block w-44 py-2 px-3 mx-6 mb-2 ;
+    }
+}
+
+
+/* ------------ End Desktop ------------ */
+
+/* ##########------------ End Media ------------########## */
+

@@ -1,3 +1,12 @@
+/*
+React Portfolio Project - (c)2024 Lance Stubblefield
+--------------------------------------------------------------------------------------
+Requires Vite, React.JS, React-Router-Dom, Typescript, Tailwind CSS, PostCSS, PostCSS-custom-properties
+header.tsx; React Router used for navigation
+######################################################################################
+ */
+
+import './header.css'
 import {Link} from "react-router-dom";
 import Lance from './images/lance800.webp'
 

@@ -22,9 +22,9 @@ function MainContent() {
                     Take a look at the other pages on this site to get an idea of my design style.
 
                     <br/><br/>
-                    <h3>Click on the contact link above and send me a message to start on your new website!</h3>
-                </p>
 
+                </p>
+                <h3>Click on the contact link above and send me a message to start on your new website!</h3>
             </div>
             <div className="mainBody">
                 <h2>What can I do for you?</h2>

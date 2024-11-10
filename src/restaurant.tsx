@@ -95,9 +95,9 @@ function Restaurant() {
 
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
                                     <div className="project-img"><img src={Port6} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
                                 </div>
                             </div>
                             {/* project-item */}

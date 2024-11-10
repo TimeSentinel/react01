@@ -82,6 +82,9 @@ Style sheet for contact.tsx: requires Tailwind CSS, PostCSS, PostCSS-custom-prop
 
     .leftPane {
         @apply w-4/5 px-5 text-left mx-auto my-5;
+        img {
+            @apply hidden;
+        }
     }
 
     .formInput {
@@ -109,6 +112,9 @@ Style sheet for contact.tsx: requires Tailwind CSS, PostCSS, PostCSS-custom-prop
 
     .leftPane {
         @apply w-2/5 text-left;
+        img {
+            @apply w-2/5;
+        }
     }
 
     .rightPane {
@@ -140,6 +146,9 @@ Style sheet for contact.tsx: requires Tailwind CSS, PostCSS, PostCSS-custom-prop
 
     .leftPane {
         @apply w-2/6 text-left ;
+        img {
+            @apply w-3/5;
+        }
     }
 
     .rightPane {

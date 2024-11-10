@@ -9,6 +9,7 @@ contact.tsx; web3forms used for form submission
 import React from "react";
 import {useForm} from "react-hook-form";
 import './contact.css'
+import Lance from './images/lance.webp'
 
 function Contact() {
     interface FormData {
@@ -71,6 +72,8 @@ function Contact() {
                                 <br/> <br/>
                             </p>
                             <h4>Your new website awaits!</h4>
+                            <br/><br/>
+                            <img src={Lance} alt="Lance" />
                         </div>
                         <div className="rightPane">
                             <div className="contactCard">

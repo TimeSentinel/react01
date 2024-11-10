@@ -249,7 +249,9 @@ h3 {
 
 .project-description {
     @apply w-7/12 p-6;
-
+    ul>li{
+        @apply ml-12 list-disc text-2xl leading-tight;
+    }
     p {
         @apply text-2xl;
     }

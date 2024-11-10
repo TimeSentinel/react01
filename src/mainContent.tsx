@@ -19,11 +19,21 @@ function MainContent() {
                     <br/><br/>
                     Like most designers, I have a collection of certificates and years of experience. If you are looking
                     for qualifications, see my resume page. <br/>
-                    I believe most of you come to my site to find out what I can do for you...
+                    Take a look at the other pages on this site to get an idea of my design style.
+
                     <br/><br/>
+                    <h3>Click on the contact link above and send me a message to start on your new website!</h3>
                 </p>
+
             </div>
             <div className="mainBody">
+                <h2>What can I do for you?</h2>
+                <p>
+                    I can bring your vision to life and present it to the world. After a short consultation,
+                    I will have an idea of what colors, images, and layouts you are looking for.
+                    Generally, I will do a little research on your industry and competition to figure out the best way
+                    to introduce you into your market.
+                </p>
                 <h2>My Code</h2>
                 <p>
                     My code is SEO friendly (<i>though I don't tend to focus on the marketing aspect exclusively</i>)

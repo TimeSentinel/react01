@@ -6,6 +6,15 @@ freelance.tsx
 ######################################################################################
  */
 
+import Port1 from './images/portfolio1.webp'
+import Port2 from './images/portfolio2.webp'
+import Port3 from './images/portfolio3.webp'
+import Port4 from './images/portfolio4.webp'
+import Port5 from './images/portfolio5.webp'
+import Port6 from './images/portfolio6.webp'
+import Port7 from './images/portfolio7.webp'
+import Port8 from './images/portfolio8.webp'
+
 function Freelance() {
 
     return (
@@ -55,9 +64,9 @@ function Freelance() {
                                     </p>
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
+                                    <div className="project-img"><img src={Port2} alt="Gallery Portfolio"/></div>
+                                    <div className="project-img"><img src={Port4} alt="Web Portfolio"/></div>
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
                                 </div>
                             </div>
                             {/* project-item */}
@@ -93,9 +102,9 @@ function Freelance() {
                                     </ul>
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
+                                    <div className="project-img"><img src={Port1} alt="Lance's previous portfolio homepage"/></div>
+                                    <div className="project-img"><img src={Port3} alt="Side Nav Portfolio"/></div>
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
                                 </div>
                             </div>
                             {/* project-item */}
@@ -112,18 +121,21 @@ function Freelance() {
                         {/*----- project card -----    */}
                         <div className="project-card">
                             <div className="project-title">
-                                <h3><a href="#"> The bestest title! </a></h3>
+                                <h3><a href="#">Single Page Website</a></h3>
                             </div>
                             <div className="project-item">
                                 <div className="project-description">
                                     <p>
-                                        A lovely description goes here
+                                        A simple landing page to give your business some legitimacy.
+                                        Put up a few images, brief description and contact information.
+                                        <br/><br/>
+                                        Upgrade by adding some modules like a photo carousel or contact form.
                                     </p>
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
+                                    <div className="project-img"><img src={Port5} alt="Restaurant Single Page"/></div>
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
+                                    {/*<div className="project-img"><img src={"#"} alt=""/></div>*/}
                                 </div>
                             </div>
                             {/* project-item */}
@@ -132,18 +144,41 @@ function Freelance() {
                         {/*----- project card -----    */}
                         <div className="project-card">
                             <div className="project-title">
-                                <h3><a href="#"> The bestest title! </a></h3>
+                                <h3><a href="#">Multi-Page Site</a></h3>
                             </div>
                             <div className="project-item">
                                 <div className="project-description">
                                     <p>
-                                        A lovely description goes here
+                                        Whatever you want to do here. Build a custom site for any type of business.
+                                        <br/><br/>
+
                                     </p>
+                                    <h3>Choose from some popular pages...</h3>
+                                    <ul>
+                                        <li>Home Page (required, of course)</li>
+                                        <li>About Us Page</li>
+                                        <li>Contact Us Page</li>
+                                        <li>Gallery Page</li>
+                                        <li>News/Blog/Forum</li>
+                                        <li>Reference/Reviews</li>
+                                        <li>Shop/Store Page(s)</li>
+                                    </ul>
+                                    <h3>Then add modules to any pages (or constant across site)...</h3>
+                                    <ul>
+                                        <li>Photo Sea (gallery)</li>
+                                        <li>Photo Carousel</li>
+                                        <li>Contact Form</li>
+                                        <li>Navbar/Menu</li>
+                                        <li>Social Media Links</li>
+                                        <li>Blog/Newsfeed</li>
+                                        <li>Catalog/Menu/Prices</li>
+                                        <li>Shopping Cart</li>
+                                    </ul>
                                 </div>
                                 <div className="project-frame">
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
-                                    <div className="project-img"><img src={"#"} alt=""/></div>
+                                    <div className="project-img"><img src={Port6} alt="Web Module Collage"/></div>
+                                    <div className="project-img"><img src={Port7} alt="Drone Website"/></div>
+                                    <div className="project-img"><img src={Port8} alt="M&M Website"/></div>
                                 </div>
                             </div>
                             {/* project-item */}
@@ -154,7 +189,7 @@ function Freelance() {
                 </div>
                 {/* content sectionj */}
             </div>
-                {/* mainBody */}
+            {/* mainBody */}
 
             <div className="mainFoot">
 

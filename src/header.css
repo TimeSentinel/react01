@@ -66,7 +66,7 @@
         width: 100px;
     }
     .headName {
-        @apply w-full;
+        @apply w-full ml-2;
     }
 
     #navBar {
@@ -96,10 +96,13 @@
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
     .header-title {
-        @apply h-48 px-4;
+        @apply h-fit px-4 pb-4;
     }
     .headImg{
         width: 180px;
+    }
+    .headName {
+        @apply  ml-4;
     }
     #navBar {
         @apply block;
@@ -137,10 +140,13 @@
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
     .header-title {
-        @apply px-8 h-64;
+        @apply px-8 h-fit pb-4;
     }
     .headImg{
         width: 280px;
+    }
+    .headName {
+        @apply  ml-8;
     }
     .navMenu {
         @apply block w-4/5;

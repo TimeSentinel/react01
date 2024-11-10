@@ -43,7 +43,7 @@ Requires Tailwind CSS, PostCSS, PostCSS-custom-properties
 }
 
 body {
-    @apply w-screen;
+    @apply w-full;
     font-size: 16px;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -140,9 +140,7 @@ h3 {
     @apply w-full my-4;
 }
 
-.table-half {
-    @apply w-1/2 my-4;
-}
+
 
 .table-row, .table-title {
     min-height: 20px;
@@ -215,8 +213,6 @@ h3 {
 
 /* ########################### Project Layouts ########################### */
 .content-section {
-    @apply w-full m-2 mb-8 px-20 ;
-
     h2 {
         @apply text-center font-bold text-3xl border-b-2 mx-auto px-20;
         border-color: var(--main-page-border-color);
@@ -243,12 +239,8 @@ h3 {
 
 }
 
-.project-item {
-    @apply flex flex-row w-full p-2;
-}
 
 .project-description {
-    @apply w-7/12 p-6;
     ul>li{
         @apply ml-12 list-disc text-2xl leading-tight;
     }
@@ -257,9 +249,7 @@ h3 {
     }
 }
 
-.project-frame {
-    @apply flex flex-col w-5/12;
-}
+
 
 .project-img {
     @apply min-h-28 m-6 border-2;
@@ -315,7 +305,21 @@ h3 {
     .main-body {
         height: 400px;
     }
-
+    .table-half {
+        @apply w-full my-4;
+    }
+    .content-section {
+        @apply w-full m-2 mb-6 px-2 ;
+    }
+    .project-item {
+        @apply flex flex-col w-full p-2;
+    }
+    .project-description {
+        @apply w-full p-2;
+    }
+    .project-frame {
+        @apply flex flex-col w-full;
+    }
     .mainFoot {
         min-height: 200px;
     }
@@ -328,7 +332,21 @@ h3 {
     .main-body {
         height: 500px;
     }
-
+    .table-half {
+        @apply w-3/4 my-4;
+    }
+    .content-section {
+        @apply w-full m-2 mb-6 px-10 ;
+    }
+    .project-item {
+        @apply flex flex-row w-full p-2;
+    }
+    .project-description {
+        @apply w-7/12 p-6;
+    }
+    .project-frame {
+        @apply flex flex-col w-5/12;
+    }
     .mainFoot {
         min-height: 300px;
     }
@@ -341,7 +359,21 @@ h3 {
     .main-body {
         height: 600px;
     }
-
+    .table-half {
+        @apply w-1/2 my-4;
+    }
+    .content-section {
+        @apply w-full m-2 mb-6 px-20 ;
+    }
+    .project-item {
+        @apply flex flex-row w-full p-2;
+    }
+    .project-description {
+        @apply w-7/12 p-6;
+    }
+    .project-frame {
+        @apply flex flex-col w-5/12;
+    }
     .mainFoot {
         min-height: 400px;
     }

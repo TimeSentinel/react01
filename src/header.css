@@ -2,24 +2,22 @@
 .header-title {
     @apply flex flex-row w-full pt-4  relative;
     color: var(--header-text-color);
-
     h1 {
-        @apply font-bold text-4xl
-    }
-
-    img {
-        @apply w-72 p-4;
+        @apply block w-full font-bold text-4xl;
     }
 }
-
+.headinginator{
+    @apply h-fit pt-2 pl-2;
+    width:60%;
+}
 .headName {
-    @apply block w-5/12 h-16 ml-8;
+    @apply block w-full h-16;
 }
 
 
 .menuItem {
     color: var(--menu-text-color);
-    @apply text-center font-bold hover:no-underline;
+    @apply block w-full text-center font-bold hover:no-underline;
 }
 
 .menuItem:hover {
@@ -30,12 +28,15 @@
 
 .menuSelected, .menuSelected:focus, .menuSelected:hover {
     @apply font-black text-center py-2 px-6 mx-6 mb-2 no-underline;
-    background-color: var(--menu-selected-bg-color);
-    color: var(--menu-selected-text-color);
+    color: var(--highlight-color);
+    background-color: var(--semidark-text-color);
+    /*background-color: var(--menu-selected-bg-color);*/
+    /*color: var(--menu-selected-text-color);*/
 }
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hamburger Menu %%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .hamburger-menu {
-    @apply w-24 h-24 mb-10 cursor-pointer;
+    @apply w-24 h-24 ml-2 cursor-pointer;
 }
 
 .hamburger-bar {
@@ -43,31 +44,42 @@
     background-color: var(--light-text-color);
 }
 
+.hamItem {
+    @apply flex w-full h-24 text-center text-3xl font-extrabold;
+    @apply items-center justify-center my-0 border-y-2;
+    vertical-align: middle;
+    border-color: var(--main-bg-light-color)
+}
+.hamItem:hover {
+    @apply no-underline;
+    color: var(--highlight-color);
+    background-color: var(--semidark-text-color);
+}
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 767px) {
     .header-title {
         @apply w-full flex flex-wrap px-2;
-
-        img {
-            @apply w-48 p-4;
-        }
     }
-
-    .navMenu {
-        @apply w-full mx-auto my-6 ;
+    .headImg{
+        width: 100px;
     }
-
     .headName {
-        @apply w-fit;
+        @apply w-full;
     }
 
-
-    .menuBar {
-        @apply block w-full mx-0 mt-6;
+    #navBar {
+        @apply hidden;
     }
 
+    #hamIcon {
+        @apply w-fit h-fit ml-64;
+    }
+    .hamMenu {
+        @apply block w-full mx-0;
+        box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+    }
     .menuSelected {
         background-color: var(--menu-selected-bg-color);
         color: var(--menu-selected-text-color);
@@ -77,18 +89,6 @@
         color: var(--menu-text-color);
     }
 
-    .menuSelected, .menuItem, .menuSelected:focus, .menuSelected:hover {
-        @apply block w-full h-24 text-center py-2 ;
-    }
-
-    #hamburger {
-        @apply w-full mt-48 text-center;
-    }
-
-    #hamMenu {
-        @apply w-fit ml-24 block h-fit;
-    }
-
 }
 
 /* ------------ End Mobile ------------ */
@@ -96,11 +96,13 @@
 /* ------------ Tablet View ------------ */
 @media (min-width: 768px) and (max-width: 991px) {
     .header-title {
-        @apply px-4;
-
-        img {
-            @apply w-48 p-4;
-        }
+        @apply h-48 px-4;
+    }
+    .headImg{
+        width: 180px;
+    }
+    #navBar {
+        @apply block;
     }
 
     .navMenu {
@@ -109,19 +111,23 @@
 
     .menuBar {
         @apply w-fit flex flex-row absolute bottom-0;
-        @apply left-64;
+        @apply left-48;
     }
 
     .menuItem {
         color: var(--menu-text-color);
-        @apply block w-36 py-1 px-2 mx-3 mb-2 ;
+        @apply block w-44 py-1 px-0 mx-0 mb-2 ;
+
+        Link {
+            @apply px-0 mx-0;
+        }
     }
 
     .menuSelected, .menuSelected:focus, .menuSelected:hover {
         @apply block w-44;
     }
 
-    #hamMenu {
+    #hamIcon, .hamMenu, .hamburger {
         @apply hidden;
     }
 }
@@ -131,11 +137,13 @@
 /* ------------ Desktop View ------------ */
 @media (min-width: 992px) {
     .header-title {
-        @apply px-8;
-
-        img {
-            @apply w-64 p-4;
-        }
+        @apply px-8 h-64;
+    }
+    .headImg{
+        width: 280px;
+    }
+    .navMenu {
+        @apply block w-4/5;
     }
 
     .navMenu {
@@ -156,7 +164,7 @@
         @apply block w-44 py-2 px-3 mx-6 mb-2 ;
     }
 
-    #hamMenu {
+    #hamMenu, .hamMenu, .hamburger {
         @apply hidden;
     }
 }
